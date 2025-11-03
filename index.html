@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aditya Bhagat</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/academicons.min.css">
+    <link rel="stylesheet" href="css/highlight.min.css">
+    <link rel="stylesheet" href="css/hugo-academic.css">
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/hugo-academic.js"></script>
+
+    <!-- Custom Styles -->
+    <style>
+      body { transition: background-color .3s, color .3s; }
+      .portrait { 
+        border-radius: 50%; 
+        width: 180px; 
+        height: 180px; 
+        object-fit: cover; 
+        display: block; 
+        margin: 0 auto 20px auto;
+        border: 4px solid #eee;
+      }
+      .section-title {
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 600;
+        color: #333;
+      }
+      .section-content {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      .social-links {
+        text-align: center;
+        margin: 20px 0;
+        font-size: 1.1rem;
+      }
+      .social-links li {
+        display: inline-block;
+        margin: 0 12px;
+      }
+      .social-links a {
+        color: #555;
+        transition: color 0.2s;
+      }
+      .social-links a:hover { color: #337ab7; text-decoration: none; }
+
+      /* Navbar Brand Color */
+      .navbar-brand { color: #337ab7 !important; }
+      .navbar-brand:hover { color: #23527c !important; }
+
+      /* Dark Mode */
+      .dark {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+      }
+      .dark .home-section,
+      .dark .container,
+      .dark .site-footer {
+        background-color: #1a1a1a !important;
+      }
+      .dark .navbar-default { 
+        background-color: #222; 
+        border-color: #333; 
+      }
+      .dark .navbar-default .navbar-brand,
+      .dark .navbar-default .navbar-nav > li > a { 
+        color: #82b4ff !important; 
+      }
+      .dark .navbar-default .navbar-nav > li > a:hover { 
+        color: #a8c7ff !important; 
+      }
+      .dark .section-title { color: #fff; }
+      .dark .portrait { border-color: #444; }
+      .dark a { color: #82b4ff; }
+      .dark a:hover { color: #a8c7ff; }
+      .dark .pub-icon { color: #aaa; }
+      .dark .site-footer { color: #999; }
+      .dark .site-footer a { color: #82b4ff; }
+      .dark ul, .dark ol, .dark p, .dark li, .dark h1, .dark h3, .dark strong { 
+        color: #e0e0e0; 
+      }
+      .dark strong { color: #fff; }
+      .dark .fa-ul .fa-li { color: #aaa; }
+
+      /* Dark Mode Toggle Button - Fixed for visibility */
+      #theme-toggle {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 1100;
+        background: rgba(255,255,255,.9);
+        border: none;
+        border-radius: 50%;
+        width: 42px;
+        height: 42px;
+        font-size: 1.2rem;
+        color: #333;
+        cursor: pointer;
+        box-shadow: 0 2px 6px rgba(0,0,0,.2);
+        transition: all .2s;
+      }
+      #theme-toggle:hover { background: rgba(255,255,255,1); }
+      .dark #theme-toggle {
+        background: rgba(0,0,0,.8);
+        color: #fff;
+      }
+      .dark #theme-toggle:hover { background: rgba(0,0,0,1); }
+    </style>
+  </head>
+  
+  <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+    <!-- Dark Mode Toggle -->
+    <button id="theme-toggle" title="Toggle dark mode">
+      <span id="theme-icon"></span>
+    </button>
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#top">Aditya Bhagat</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#lors">LORs</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <!-- About Section -->
+      <section id="about" class="home-section text-center" style="padding: 80px 0;">
+        <img src="img/portrait.jpg" alt="Aditya Bhagat" class="portrait">
+        <h1 style="margin-bottom: 10px;">Aditya Bhagat</h1>
+        
+        <ul class="social-links list-unstyled">
+          <li>
+            <a href="https://github.com/Aditya-ADII" title="GitHub"><i class="fa fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/blacktech/" title="LinkedIn"><i class="fa fa-linkedin fa-2x"></i></a>
+            <a href="https://www.researchgate.net/profile/Aditya-Bhagat-7" title="ResearchGate"><i class="ai ai-researchgate fa-2x"></i></a>
+            <a href="https://scholar.google.com/citations?user=EM-OpXQAAAAJ&hl=en&authuser=1" title="Google Scholar"><i class="ai ai-google-scholar fa-2x"></i></a>
+            <a href="pdf/cv.pdf" title="Download CV"><i class="fa fa-file-pdf-o fa-2x"></i></a>
+          </li>
+        </ul>
+
+        <div class="section-content">
+          <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 40px; color: #555;">
+            I am a passionate AI researcher and M.Tech student in Artificial Intelligence at IIT Patna. With a strong background in machine learning, reinforcement learning, and data science, I focus on developing innovative solutions for real-world challenges in finance, Agentic AI, and natural language processing. My work spans from deep learning models for finance to MLOps pipelines for personalized advertising.
+          </p>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="home-section" style="padding: 80px 0;">
+        <h1 class="section-title">Education</h1>
+        <div class="section-content">
+          <ul class="fa-ul list-unstyled" style="font-size: 1.1rem; line-height: 1.8;">
+
+            <li style="margin-bottom: 25px; display: flex; align-items: flex-start;">
+              <img src="img/iitp.png" alt="IIT Patna logo"
+                  style="width: 60px; height: 60px; object-fit: contain; margin-right: 20px;"
+                  onerror="this.onerror=null;this.src='img/iitp.jpg';">
+              <div>
+                <strong>Indian Institute of Technology Patna (IIT Patna, IITP)</strong><br>
+                Master of Technology in Artificial Intelligence<br>
+                Jul 2024 – Present, Patna, India
+              </div>
+            </li>
+
+            <li style="margin-bottom: 25px; display: flex; align-items: flex-start;">
+              <img src="img/ghrce.png" alt="GHRCE logo"
+                  style="width: 60px; height: 60px; object-fit: contain; margin-right: 20px;"
+                  onerror="this.onerror=null;this.src='img/ghrce.jpg';">
+              <div>
+                <strong>G H Raisoni College of Engineering, Nagpur (GHRCE)</strong><br>
+                Bachelor of Technology in Electronics Engineering, Minor in Computer Science and Engineering<br>
+                Dec 2021 – Jun 2024, Nagpur, India
+              </div>
+            </li>
+
+            <li style="display: flex; align-items: flex-start;">
+              <img src="img/gpn.png" alt="Government Polytechnic Nagpur logo"
+                  style="width: 60px; height: 60px; object-fit: contain; margin-right: 20px;"
+                  onerror="this.onerror=null;this.src='img/gpn.jpeg';">
+              <div>
+                <strong>Government Polytechnic Nagpur (GP Nagpur)</strong><br>
+                Diploma in Electrical Engineering<br>
+                Jul 2018 – Jul 2021, Nagpur, India
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="home-section" style="padding: 60px 0;">
+        <h1 class="section-title">Experience</h1>
+        <div class="section-content">
+          <ul style="font-size: 1.05rem; line-height: 1.7; list-style: none; padding: 0; margin: 0;">
+
+            <!-- IIT Patna -->
+            <li style="margin-bottom: 25px; display: flex; align-items: flex-start;">
+              <img src="img/iitp.png" alt="IIT Patna logo"
+                  style="width: 60px; height: 60px; object-fit: contain; margin-right: 20px;"
+                  onerror="this.onerror=null;this.src='img/iitp.jpg';">
+              <div>
+                <strong>Indian Institute of Technology Patna (IIT Patna)</strong><br>
+                Teaching Assistant · Jan 2025 – Present, Patna, India
+                <ul style="margin-top: 6px; padding-left: 18px;">
+                  <li>TA for CS 431: Big Data Analytics and Lab (Autumn 2025).</li>
+                  <li>TA for CS 1201: Data Structures and Lab (Spring 2025).</li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- VNIT Research Intern -->
+            <li style="margin-bottom: 25px; display: flex; align-items: flex-start;">
+              <img src="img/vnit.png" alt="VNIT Nagpur logo"
+                  style="width: 60px; height: 60px; object-fit: contain; margin-right: 20px;"
+                  onerror="this.onerror=null;this.src='img/vnit.jpeg';">
+              <div>
+                <strong>Visvesvaraya National Institute of Technology Nagpur (VNIT Nagpur)</strong><br>
+                Research Intern · Jan – Jul 2024, Nagpur, India
+                <ul style="margin-top: 6px; padding-left: 18px;">
+                  <li>Published paper in Springer CCIS 2024 on reinforcement learning for stock trading.</li>
+                  <li>Contributed a forthcoming book chapter on quantum-inspired autonomous driving.</li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- VNIT Summer Intern -->
+            <li style="margin-bottom: 25px; display: flex; align-items: flex-start;">
+              <img src="img/vnit.png" alt="VNIT Nagpur logo"
+                  style="width: 60px; height: 60px; object-fit: contain; margin-right: 20px;"
+                  onerror="this.onerror=null;this.src='img/vnit.jpeg';">
+              <div>
+                <strong>Visvesvaraya National Institute of Technology Nagpur (VNIT Nagpur)</strong><br>
+                Summer Research Intern · Jun – Jul 2023, Nagpur, India
+                <ul style="margin-top: 6px; padding-left: 18px;">
+                  <li>Developed deep learning models for rainfall–runoff prediction.</li>
+                  <li>Co-authored IGI Global 2024 book chapter on UAV-based forest fire detection.</li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- GHRCE -->
+            <li style="display: flex; align-items: flex-start;">
+              <img src="img/ghrce.png" alt="GHRCE logo"
+                  style="width: 60px; height: 60px; object-fit: contain; margin-right: 20px;"
+                  onerror="this.onerror=null;this.src='img/ghrce.jpg';">
+              <div>
+                <strong>G H Raisoni College of Engineering, Nagpur (GHRCE)</strong><br>
+                Data Science Intern · Aug – Nov 2022, Nagpur, India
+                <ul style="margin-top: 6px; padding-left: 18px;">
+                  <li>Published at IEEE ICCCNT 2023 on sea level prediction using ML models.</li>
+                </ul>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="home-section" style="padding: 60px 0;">
+        <h1 class="section-title">Projects</h1>
+        <div class="section-content">
+          <ul style="font-size: 1.05rem; line-height: 1.7; list-style: disc; padding-left: 20px; margin: 0;">
+
+            <!-- Aether Marketing System -->
+            <li style="margin-bottom: 20px;">
+              <strong>Aether Marketing System</strong> 
+              <a href="https://github.com/Aditya-ADII/Aether-Marketing-System" target="_blank">[GitHub]</a><br>
+              <em>AI-powered marketing automation platform</em>
+              <ul style="margin-top: 6px; padding-left: 20px; list-style: disc;">
+                <li>Built an end-to-end MLOps system for personalized ad generation using K-Means and Gemini 2.5 Pro.</li>
+                <li>Developed scalable backend with FastAPI, Celery, Redis, and PostgreSQL; integrated CI/CD, Docker, and Kubernetes.</li>
+              </ul>
+            </li>
+
+            <!-- CuisineInsight Q&A -->
+            <li style="margin-bottom: 20px;">
+              <strong>CuisineInsight Q&A</strong> 
+              <a href="https://github.com/Aditya-ADII/CuisineInsight-Q-and-A" target="_blank">[GitHub]</a><br>
+              <em>Retrieval-augmented restaurant review analysis system</em>
+              <ul style="margin-top: 6px; padding-left: 20px; list-style: disc;">
+                <li>Implemented RAG on 10k+ Yelp reviews using LangChain, Flask, PyTorch, and Ollama.</li>
+                <li>Built sentiment analysis (TF-IDF + Logistic Regression, 91% accuracy) with Chroma vector search integration.</li>
+              </ul>
+            </li>
+
+            <!-- Multi-User PDF Q&A -->
+            <li>
+              <strong>Multi-User PDF Q&A</strong> 
+              <a href="https://github.com/Aditya-ADII/Multi-User-PDF-Q-and-A" target="_blank">[GitHub]</a><br>
+              <em>Interactive PDF question-answering web application</em>
+              <ul style="margin-top: 6px; padding-left: 20px; list-style: disc;">
+                <li>Developed a Streamlit-based Q&A app using FAISS vector search and Gemini 1.5 Flash API.</li>
+                <li>Used Redis for scalable embedding storage and deployed using Docker and Kubernetes.</li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+
+      <!-- Publications -->
+      <section id="publications" class="home-section" style="padding: 60px 0;">
+        <h1 class="section-title">Publications</h1>
+        <div class="section-content">
+          <ul class="fa-ul" style="font-size: 1.05rem; line-height: 1.7;">
+
+            <!-- Publication 1 -->
+            <li style="margin-bottom: 20px;">
+              <i class="fa-li fa fa-book pub-icon"></i>
+              <strong>Multi-feature Reinforcement Learning for Financial Market Decision Making</strong><br>
+              Communications in Computer and Information Science (CCIS), 2025 | Book Chapter<br>
+              Developed a multi-feature reinforcement learning framework combining candlestick patterns and fundamental metrics with GRU and DQN models to generate profitable trading signals in Indian and U.S. equity markets.  
+              <a href="https://doi.org/10.1007/978-3-031-90577-3_35" target="_blank">DOI</a>
+            </li>
+
+            <!-- Publication 2 -->
+            <li style="margin-bottom: 20px;">
+              <i class="fa-li fa fa-book pub-icon"></i>
+              <strong>ML/DL-Based Forest Fire Prediction Using UAV</strong><br>
+              Advances in Computational Intelligence and Robotics, 2024 | Book Chapter<br>
+              Designed deep learning models for UAV-based forest fire detection, integrating image and environmental data to improve prediction accuracy and response time.  
+              <a href="https://doi.org/10.4018/979-8-3693-0578-2.ch007" target="_blank">DOI</a>
+            </li>
+
+            <!-- Publication 3 -->
+            <li>
+              <i class="fa-li fa fa-book pub-icon"></i>
+              <strong>Prediction of Global Sea Water Level using Linear Regression and Gradient Descent</strong><br>
+              14th International Conference on Computing Communication and Networking Technologies (ICCCNT), 2023 | Conference Paper<br>
+              Developed linear regression models with gradient descent to predict global sea level changes, achieving 30% higher accuracy compared to baseline ML models.  
+              <a href="https://doi.org/10.1109/icccnt56998.2023.10306648" target="_blank">DOI</a>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section id="certifications" class="home-section" style="padding: 60px 0;">
+        <h1 class="section-title">Certifications</h1>
+        <div class="section-content">
+          <ul style="font-size: 1.05rem; line-height: 1.7; list-style: disc; padding-left: 20px;">
+
+            <!-- Oracle Cloud GenAI Professional -->
+            <li style="margin-bottom: 15px; display: flex; align-items: center;">
+              <img src="img/oracle.png" alt="Oracle" style="width: 50px; height: 50px; object-fit: contain; margin-right: 12px;">
+              <div>
+                <strong>Oracle Cloud GenAI Professional 2025</strong> 
+                <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=3889817EEB69EA56AB7660B4A028AEABAB4A2C1162F8BBAEF851EF9D4C8BC96C" target="_blank">[View]</a>
+              </div>
+            </li>
+
+            <!-- Oracle Cloud Data Science Professional -->
+            <li style="margin-bottom: 15px; display: flex; align-items: center;">
+              <img src="img/oracle.png" alt="Oracle" style="width: 50px; height: 50px; object-fit: contain; margin-right: 12px;">
+              <div>
+                <strong>Oracle Cloud Data Science Professional 2025</strong> 
+                <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=45EE34BF17E1C89AE8D7F7AABA64ABDA12AB995BF59EEE4BF851F20D8A2D78EE" target="_blank">[View]</a>
+              </div>
+            </li>
+
+            <!-- Google Analytics -->
+            <li style="margin-bottom: 15px; display: flex; align-items: center;">
+              <img src="img/google.png" alt="Google" style="width: 50px; height: 50px; object-fit: contain; margin-right: 12px;">
+              <div>
+                <strong>Google Analytics Certification</strong> 
+                <a href="https://skillshop.credential.net/fd84cf02-ca60-4588-bd90-ead777935bb3" target="_blank">[View]</a>
+              </div>
+            </li>
+
+            <!-- NVIDIA -->
+            <li style="margin-bottom: 15px; display: flex; align-items: center;">
+              <img src="img/nvidia.png" alt="NVIDIA" style="width: 50px; height: 50px; object-fit: contain; margin-right: 12px;">
+              <div>
+                <strong>NVIDIA End-to-End Data Science</strong> 
+                <a href="https://learn.nvidia.com/certificates?id=HvZrE3KRRVKW_TjuR5b0PQ#" target="_blank">[View]</a>
+              </div>
+            </li>
+
+            <!-- QuantInsti -->
+            <li style="margin-bottom: 15px; display: flex; align-items: center;">
+              <img src="img/quantinsti.png" alt="QuantInsti" style="width: 50px; height: 50px; object-fit: contain; margin-right: 12px;">
+              <div>
+                <strong>QuantInsti Options Trading (Python)</strong> 
+                <a href="https://quantra.quantinsti.com/certificate-snap/options-trading-strategies-python-basic?certificateKey=722083fa2ae01e12475acfa87b6cb60c6193bdf507b74dff0c7fc9018ea267bb17bbd0837aab5b827f37b00ae8e5fd3c" target="_blank">[View]</a>
+              </div>
+            </li>
+
+            <!-- NPTEL Blockchain -->
+            <li style="margin-bottom: 15px; display: flex; align-items: center;">
+              <img src="img/nptel.png" alt="NPTEL" style="width: 50px; height: 50px; object-fit: contain; margin-right: 12px;">
+              <div>
+                <strong>Blockchain and its Applications (NPTEL)</strong> 
+                <a href="https://archive.nptel.ac.in/content/noc/NOC23/SEM1/Ecertificates/106/noc23-cs47/Course/NPTEL23CS47S4427365004049267.jpg" target="_blank">[View]</a>
+              </div>
+            </li>
+
+            <!-- NPTEL Compiler Design -->
+            <li style="margin-bottom: 15px; display: flex; align-items: center;">
+              <img src="img/nptel.png" alt="NPTEL" style="width: 50px; height: 50px; object-fit: contain; margin-right: 12px;">
+              <div>
+                <strong>Compiler Design (NPTEL)</strong> 
+                <a href="https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/106/noc24-cs18/Course/NPTEL24CS18S106290209230380050.pdf" target="_blank">[View]</a>
+              </div>
+            </li>
+
+            <!-- NPTEL Air Pollution -->
+            <li style="display: flex; align-items: center;">
+              <img src="img/nptel.png" alt="NPTEL" style="width: 50px; height: 50px; object-fit: contain; margin-right: 12px;">
+              <div>
+                <strong>Air Pollution and Control (NPTEL)</strong> 
+                <a href="https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/105/noc24-ce03/Course/NPTEL24CE03S96290144430380050.pdf" target="_blank">[View]</a>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+
+      <!-- LORs -->
+      <section id="lors" class="home-section" style="padding: 60px 0;">
+        <h1 class="section-title">Letters of Recommendation</h1>
+        <div class="section-content">
+          <ul class="fa-ul" style="font-size: 1.05rem;">
+
+            <li style="margin-bottom: 12px;">
+              <i class="fa-li fa fa-file-text pub-icon"></i>
+              <strong>Dr. Ashish Tiwari</strong><br>
+              Assistant Professor, Department of Computer Science and Engineering, Visvesvaraya National Institute of Technology (VNIT), Nagpur, India
+              <br><a href="pdf/lor_tiwari.pdf">[PDF]</a>
+            </li>
+
+            <li style="margin-bottom: 12px;">
+              <i class="fa-li fa fa-file-text pub-icon"></i>
+              <strong>Dr. Pramod V. Walke</strong><br>
+              Dean Academics, G. H. Raisoni College of Engineering (GHRCE), Nagpur, Maharashtra, India
+              <br><a href="pdf/lor_walke.pdf">[PDF]</a>
+            </li>
+
+            <li style="margin-bottom: 12px;">
+              <i class="fa-li fa fa-file-text pub-icon"></i>
+              <strong>Dr. Laxman Thakre</strong><br>
+              Head of Electronics Engineering Department, G. H. Raisoni College of Engineering (GHRCE), Nagpur, Maharashtra, India
+              <br><a href="pdf/lor_thakre.pdf">[PDF]</a>
+            </li>
+
+            <li style="margin-bottom: 12px;">
+              <i class="fa-li fa fa-file-text pub-icon"></i>
+              <strong>Dr. Dinesh Padole</strong><br>
+              Dean of Admissions, G. H. Raisoni College of Engineering (GHRCE), Nagpur, Maharashtra, India
+              <br><a href="pdf/lor_padole.pdf">[PDF]</a>
+            </li>
+
+            <li>
+              <i class="fa-li fa fa-file-text pub-icon"></i>
+              <strong>Dr. Snehlata Dongre</strong><br>
+              Head of Computer Science and Engineering Department, G. H. Raisoni College of Engineering (GHRCE), Nagpur, Maharashtra, India
+              <br><a href="pdf/lor_dongre.pdf">[PDF]</a>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+
+      <!-- Contact -->
+      <section id="contact" class="home-section" style="padding: 60px 0;">
+        <h1 class="section-title">Contact</h1>
+        <div class="section-content text-center">
+          <p style="font-size: 1.2rem;">
+            <i class="fa fa-phone"></i> +91-8975051978<br>
+            <i class="fa fa-envelope"></i> <a href="mailto:aditya.bhagat.contact@gmail.com">aditya.bhagat.contact@gmail.com</a>
+          </p>
+        </div>
+      </section>
+
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="powered-by" style="text-align: center; font-size: 0.9rem; color: #777;">
+          © 2025 Aditya Bhagat · Powered by the Academic theme for Hugo.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Dark Mode Script -->
+    <script>
+      (function () {
+        const toggle = document.getElementById('theme-toggle');
+        const icon = document.getElementById('theme-icon');
+        const body = document.body;
+        const sun = '<i class="fa fa-sun-o"></i>';
+        const moon = '<i class="fa fa-moon-o"></i>';
+
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const saved = localStorage.getItem('theme');
+        const isDark = saved === 'dark' || (!saved && prefersDark);
+
+        if (isDark) {
+          body.classList.add('dark');
+          icon.innerHTML = sun;
+        } else {
+          icon.innerHTML = moon;
+        }
+
+        toggle.addEventListener('click', () => {
+          body.classList.toggle('dark');
+          const nowDark = body.classList.contains('dark');
+          icon.innerHTML = nowDark ? sun : moon;
+          localStorage.setItem('theme', nowDark ? 'dark' : 'light');
+        });
+
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          if (!localStorage.getItem('theme')) {
+            body.classList.toggle('dark', e.matches);
+            icon.innerHTML = e.matches ? sun : moon;
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
