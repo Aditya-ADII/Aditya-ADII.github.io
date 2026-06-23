@@ -229,7 +229,7 @@
                   onerror="this.onerror=null;this.src='img/iitp.jpg';">
               <div>
                 <strong>Indian Institute of Technology Patna (IIT Patna)</strong><br>
-                Teaching Assistant · Jan 2025 – Jun 2026, Patna, India
+                Teaching Assistant · Jan 2025 – Jun 2026 (<span class="duration" data-start="2025-01" data-end="2026-06"></span>), Patna, India
                 <ul style="margin-top: 6px; padding-left: 18px;">
                   <li>TA for CS 2203: Artificial Intelligence and Lab (Spring 2026).</li>
                   <li>TA for CS 431: Big Data Analytics and Lab (Autumn 2025).</li>
@@ -245,7 +245,7 @@
                   onerror="this.onerror=null;this.src='img/vnit.jpeg';">
               <div>
                 <strong>Visvesvaraya National Institute of Technology Nagpur (VNIT Nagpur)</strong><br>
-                Research Intern · Jan – Jul 2024, Nagpur, India
+                Research Intern · Jan – Jul 2024 (<span class="duration" data-start="2024-01" data-end="2024-07"></span>), Nagpur, India
                 <ul style="margin-top: 6px; padding-left: 18px;">
                   <li>Published paper in Springer CCIS 2024 on reinforcement learning for stock trading.</li>
                   <li>Contributed a forthcoming book chapter on quantum-inspired autonomous driving.</li>
@@ -260,7 +260,7 @@
                   onerror="this.onerror=null;this.src='img/vnit.jpeg';">
               <div>
                 <strong>Visvesvaraya National Institute of Technology Nagpur (VNIT Nagpur)</strong><br>
-                Summer Research Intern · Jun – Jul 2023, Nagpur, India
+                Summer Research Intern · Jun – Jul 2023 (<span class="duration" data-start="2023-06" data-end="2023-07"></span>), Nagpur, India
                 <ul style="margin-top: 6px; padding-left: 18px;">
                   <li>Developed deep learning models for rainfall–runoff prediction.</li>
                   <li>Co-authored IGI Global 2024 book chapter on UAV-based forest fire detection.</li>
@@ -275,7 +275,7 @@
                   onerror="this.onerror=null;this.src='img/ghrce.jpg';">
               <div>
                 <strong>G H Raisoni College of Engineering, Nagpur (GHRCE)</strong><br>
-                Data Science Intern · Aug – Nov 2022, Nagpur, India
+                Data Science Intern · Aug – Nov 2022 (<span class="duration" data-start="2022-07" data-end="2022-11"></span>), Nagpur, India
                 <ul style="margin-top: 6px; padding-left: 18px;">
                   <li>Published at IEEE ICCCNT 2023 on sea level prediction using ML models.</li>
                 </ul>
@@ -339,13 +339,20 @@
             <!-- Publication 1 -->
             <li style="margin-bottom: 20px;">
               <i class="fa-li fa fa-book pub-icon"></i>
+              <strong>FinRegGuard: Can LLMs Detect Regulatory Evasion? A 100K Adversarial Benchmark for U.S. Financial Law</strong><br>
+              AI4Law Workshop, International Conference on Machine Learning (ICML), 2026 | Accepted (Proceedings Forthcoming)<br>
+              Developed a 100K-example adversarial benchmark to evaluate whether large language models can detect regulatory evasion strategies in U.S. financial law, providing a rigorous framework for assessing legal reasoning and compliance capabilities.
+            </li>
+            <!-- Publication 2 -->
+            <li style="margin-bottom: 20px;">
+              <i class="fa-li fa fa-book pub-icon"></i>
               <strong>Multi-feature Reinforcement Learning for Financial Market Decision Making</strong><br>
               Communications in Computer and Information Science (CCIS), 2025 | Book Chapter<br>
               Developed a multi-feature reinforcement learning framework combining candlestick patterns and fundamental metrics with GRU and DQN models to generate profitable trading signals in Indian and U.S. equity markets.  
               <a href="https://doi.org/10.1007/978-3-031-90577-3_35" target="_blank">DOI</a>
             </li>
 
-            <!-- Publication 2 -->
+            <!-- Publication 3 -->
             <li style="margin-bottom: 20px;">
               <i class="fa-li fa fa-book pub-icon"></i>
               <strong>ML/DL-Based Forest Fire Prediction Using UAV</strong><br>
@@ -354,7 +361,7 @@
               <a href="https://doi.org/10.4018/979-8-3693-0578-2.ch007" target="_blank">DOI</a>
             </li>
 
-            <!-- Publication 3 -->
+            <!-- Publication 4 -->
             <li>
               <i class="fa-li fa fa-book pub-icon"></i>
               <strong>Prediction of Global Sea Water Level using Linear Regression and Gradient Descent</strong><br>
@@ -512,7 +519,7 @@
     <footer class="site-footer">
       <div class="container">
         <p class="powered-by" style="text-align: center; font-size: 0.9rem; color: #777;">
-          © 2025 Aditya Bhagat · Powered by the Academic theme for Hugo.
+          © 2026 Aditya Bhagat · Powered by the Academic theme for Hugo.
         </p>
       </div>
     </footer>
@@ -551,6 +558,38 @@
           }
         });
       })();
+    </script>
+    <script>
+    document.querySelectorAll('.duration').forEach(el => {
+        const start = new Date(el.dataset.start);
+
+        let end;
+        if (el.dataset.end.toLowerCase() === 'present') {
+            end = new Date();
+        } else {
+            end = new Date(el.dataset.end);
+        }
+
+        let months =
+            (end.getFullYear() - start.getFullYear()) * 12 +
+            (end.getMonth() - start.getMonth()) + 1;
+
+        const years = Math.floor(months / 12);
+        const remainingMonths = months % 12;
+
+        let text = '';
+
+        if (years > 0) {
+            text += `${years} yr${years > 1 ? 's' : ''}`;
+        }
+
+        if (remainingMonths > 0) {
+            if (text) text += ' ';
+            text += `${remainingMonths} mo${remainingMonths > 1 ? 's' : ''}`;
+        }
+
+        el.textContent = text;
+    });
     </script>
   </body>
 </html>
